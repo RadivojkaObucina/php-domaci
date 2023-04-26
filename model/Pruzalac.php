@@ -3,12 +3,12 @@
 class Pruzalac{
     
     public $id;   
-    public $imePrezime;   
+    public $imePrezimePruzaocaUsluge;   
     
-    public function __construct($id=null, $imePrezime=null)
+    public function __construct($id=null, $imePrezimePruzaocaUsluge=null)
     {
         $this->id = $id;
-        $this->imePrezime = $imePrezime;
+        $this->imePrezimePruzaocaUsluge = $imePrezimePruzaocaUsluge;
        
     }
 
