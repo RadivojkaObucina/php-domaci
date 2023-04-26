@@ -3,15 +3,17 @@
 class Usluga {
     
     public $id;   
-    public $naziv;   
+    public $nazivUsluge;   
     public $pruzalac;   
     
-    public function __construct($id=null, $naziv=null, $pruzalac=null)
+    public function __construct($id=null, $nazivUsluge=null, $pruzalac=null)
     {
         $this->id = $id;
-        $this->naziv = $naziv;
+        $this->nazivUsluge = $nazivUsluge;
         $this->pruzalac = $pruzalac;
     }
+
+
 
     public static function getAll(Broker $broker)
     {
@@ -35,13 +37,13 @@ class Usluga {
     # ili da zovemo nad objektom koji menjamo a prosledjujemo id
     public function update(Usluga $usluga,Broker $broker)
     {
-        $query = "UPDATE usluga set naziv = '$usluga->naziv',pruzalac = $usluga->pruzalac WHERE id=$this->id";
+        $query = "UPDATE usluga set naziv = '$usluga->nazivUsluge', pruzalac = $usluga->pruzalac WHERE id=$this->id";
         return $broker->executeQuery($query);
     }
   
     public static function add(Usluga $usluga,Broker $broker)
     {
-        $query = "INSERT INTO usluga(naziv, pruzalac) VALUES('$usluga->naziv','$usluga->pruzalac')";
+        $query = "INSERT INTO usluga(naziv, pruzalac) VALUES('$usluga->nazivUsluge','$usluga->pruzalac')";
         return $broker->executeQuery($query);
     }
 }
