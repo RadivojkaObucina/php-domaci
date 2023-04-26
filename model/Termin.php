@@ -19,6 +19,7 @@ class Termin {
         $this->prostorijaSalona = $prostorijaSalona;
     }
 
+    
 
     public static function getAll(Broker $broker)
     {
