@@ -49,7 +49,7 @@
               </div>
             </fieldset>
             <div class="d-grid gap-2">
-              <a href='./terminiZaUslugu.php' id='sviTermini'><button class="btn btn-warning" style="background-color: #f3c9bc ;" type="button">Svi termini</button></a>
+              <a href='./terminiZaUslugu.php' id='sviTermini'><button class="btn btn-warning" style="background-color: #f9f295 ;" type="button">Svi termini</button></a>
             </div>
           </form>
 
@@ -117,7 +117,7 @@
       </div>
       <div class='table_div table-hover'>
         <table class="table">
-          <thead class="thead-red" style="background-color: #f3c9bc;">
+          <thead class="thead-red" style="background-color: #f9f295;">
             <tr>
               <th scope="col">ID</th>
               <th scope="col">Usluga</th>
@@ -143,7 +143,7 @@
     </div>
 
   </div>
-  
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
