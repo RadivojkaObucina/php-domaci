@@ -12,6 +12,8 @@ class Pruzalac{
        
     }
 
+    
+
     public static function getAll(Broker $broker)
     {
         $query = "SELECT * FROM pruzalac";
