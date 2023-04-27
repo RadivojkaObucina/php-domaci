@@ -51,9 +51,9 @@
 
         </div>
         <div class="modal-footer align_center">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #b6c059;">Zatvori</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_sacuvaj" style="background-color: #7d8f01;">Sacuvaj</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal" hidden id="button_delete" style="background-color: #404902;">Obrisi</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #fadd5a;">Zatvori</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_sacuvaj" style="background-color: #f7c136;">Sacuvaj</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" hidden id="button_delete" style="background-color: #f0ab0c;">Obrisi</button>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
 
       <div class='table_div'>
         <table class="table table-hover">
-          <thead class="thead-red" style="background-color: #f3c9bc ;">
+          <thead class="thead-red" style="background-color: #f9f295  ;">
             <tr>
               <th scope="col">ID</th>
               <th scope="col">Klijent</th>
