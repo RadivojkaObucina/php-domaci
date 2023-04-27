@@ -3,6 +3,8 @@
 require "../model/Termin.php";
 require '../Broker.php';
 
+
+
 $broker=Broker::getBroker();
 
     $resultSet = Termin::getAll($broker);

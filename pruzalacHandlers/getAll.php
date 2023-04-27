@@ -3,6 +3,8 @@
 require "../model/Pruzalac.php";
 require '../Broker.php';
 
+
+
 $broker=Broker::getBroker();
 
     $resultSet = Pruzalac::getAll($broker);

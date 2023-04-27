@@ -3,6 +3,8 @@
 require "../Broker.php";
 require "../model/Termin.php";
 
+
+
 $broker=Broker::getBroker();
 
 if(isset($_POST['usluga']) && isset($_POST['klijent']) 

@@ -3,6 +3,8 @@
 require "../model/Usluga.php";
 require '../Broker.php';
 
+
+
 $broker=Broker::getBroker();
 
     $resultSet = Usluga::getAll($broker);
