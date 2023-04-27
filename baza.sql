@@ -14,7 +14,7 @@ MySQL - 8.0.18 : Database - spa
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`spa` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-USE `spa`;
+USE `database`;
 
 /*Table structure for table `pruzalac` */
 
@@ -29,10 +29,11 @@ CREATE TABLE `pruzalac` (
 /*Data for the table `pruzalac` */
 
 insert  into `pruzalac`(`id`,`imePrezime`) values 
-(1,'Marko Markovic'),
-(2,'Petra Petrovic'),
-(3,'Marina Marinkovic'),
-(4,'Nikola Nikolic');
+(1,'Radivojka Obucina'),
+(2,'Andrea Pesic'),
+(3,'Maja Petrovic'),
+(4,'Iva Petkovic'),
+(5,'Andjela Ristivojevic');
 
 /*Table structure for table `termin` */
 
@@ -52,11 +53,12 @@ CREATE TABLE `termin` (
 /*Data for the table `termin` */
 
 insert  into `termin`(`id`,`usluga`,`klijent`,`datum`,`prostorija`) values 
-(1,2,'Andrea Pesic','2022-02-14',19),
-(2,3,'Minja Pesic','2022-01-16',3),
-(3,5,'Uros Peric','2022-02-22',16),
-(4,4,'Milan Maric','2022-01-30',2),
-(5,3,'Luka Jovanovic','2022-03-15',2);
+(1,2,'Marijana Marinkovic','2023-05-27',19),
+(2,3,'Nikolina Nikolic','2023-05-12',3),
+(3,5,'Milica Milic','2023-05-09',16),
+(4,4,'Petra Petrovic','2023-05-21',2),
+(8,3,'Tamara Popovic','2023-05-17',19),
+(10,2,'Isidora Krstic','2023-05-19',3),;
 
 /*Table structure for table `usluga` */
 
@@ -80,6 +82,7 @@ insert  into `usluga`(`id`,`naziv`,`pruzalac`) values
 (4,'Tretman lica',2),
 (5,'Sauna tretman',4),
 (6,'Eksfolijacija',1);
+
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
