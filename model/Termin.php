@@ -6,17 +6,17 @@ class Termin {
     
     public $id;   
     public $usluga;   
-    public $imePrezimeKlijenta;   
-    public $datumTretmana;   
-    public $prostorijaSalona;
+    public $klijent;   
+    public $datum;   
+    public $prostorija;
     
-    public function __construct($id=null, $usluga=null, $imePrezimeKlijenta=null, $datumTretmana=null,  $prostorijaSalona=null)
+    public function __construct($id=null, $usluga=null, $klijent=null, $datum=null,  $prostorija=null)
     {
         $this->id = $id;
         $this->usluga = $usluga;
-        $this->imePrezimeKlijenta = $imePrezimeKlijenta;
-        $this->datumTretmana = $datumTretmana;
-        $this->prostorijaSalona = $prostorijaSalona;
+        $this->klijent = $klijent;
+        $this->datum = $datum;
+        $this->prostorija = $prostorija;
     }
 
 
@@ -44,13 +44,13 @@ class Termin {
 
     public function update(Termin $termin, Broker $broker)
     {
-        $query = "UPDATE termin set usluga = $termin->usluga, klijent = '$termin->imePrezimeKlijenta', prostorija = '$termin->prostorijaSalona', datum = $termin->datumTretmana WHERE id=$this->id";
+        $query = "UPDATE termin set usluga = $termin->usluga, klijent = '$termin->klijent', prostorija = '$termin->prostorija', datum = $termin->datum WHERE id=$this->id";
         return $broker->executeQuery($query);
     }
 
     public static function add(Termin $termin, Broker $broker)
     {
-        $query = "INSERT INTO termin(usluga, klijent, prostorija, datum) VALUES('$termin->usluga','$termin->imePrezimeKlijenta', ,'$termin->prostorijaSalona', '$termin->datumTretmana')";
+        $query = "INSERT INTO termin(usluga, klijent, prostorija, datum) VALUES('$termin->usluga','$termin->klijent', ,'$termin->prostorija', '$termin->datum')";
         return $broker->executeQuery($query);
     }
 }
