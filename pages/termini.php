@@ -38,7 +38,7 @@
           <label>Sortiraj po datumu</label>
           <select id='sortiraj' class='form-control'>
             <option value="asc">Najskorije</option>
-            <option value="desc">Najudaljenije</option>
+            <option value="desc">Najkasnije</option>
           </select>
         </div>
         <div class="col-3">
