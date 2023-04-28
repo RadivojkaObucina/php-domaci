@@ -70,6 +70,8 @@
     </div>
   </div>
 
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     let termini = [];
@@ -111,6 +113,7 @@
       })
     })
 
+
     function funkcijaZaPretragu1() {
       input = document.getElementById("datum");
       filter = input.value;
@@ -121,6 +124,7 @@
       }
       napuniTabelu(terminiFiltrirano);
     }
+
 
     function funkcijaZaPretragu2() {
       input = document.getElementById("prostorija");
@@ -134,6 +138,7 @@
     }
 
 
+    
     function napuniTabelu(niz) {
       $('#termini').html('');
       let i = 0;
