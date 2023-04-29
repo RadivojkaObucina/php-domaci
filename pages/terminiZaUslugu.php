@@ -196,10 +196,11 @@
         }
         $("#termini").html(data);
         termini = data.termini;
-        termini.sort(function (a, b) {
+        if (termini) {
+          termini.sort(function (a, b) {
           return a.datum.localeCompare(b.datum);
-
         })
+        }
         napuniTabelu();
       })
     }
@@ -208,7 +209,8 @@
     function napuniTabelu() {
       $('#termini').html('');
       let i = 0;
-      for (let termin of termini) {
+      if (termini) {
+        for (let termin of termini) {
         $('#termini').append(`
             <tr data-toggle='modal' data-target='#exampleModal' data-backdrop="static" data-id=${termin.id} >
               <td>${++i}</td>
@@ -217,6 +219,7 @@
               <td>${termin.prostorija}</td>
             </tr>
           `)
+      }
       }
     }
   </script>

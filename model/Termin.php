@@ -44,13 +44,13 @@ class Termin {
 
     public function update(Termin $termin, Broker $broker)
     {
-        $query = "UPDATE termin set usluga = $termin->usluga, klijent = '$termin->klijent', prostorija = '$termin->prostorija', datum = $termin->datum WHERE id=$this->id";
+        $query = "UPDATE termin set usluga = $termin->usluga, klijent = '$termin->klijent', prostorija = '$termin->prostorija', datum = '$termin->datum' WHERE id=$this->id";
         return $broker->executeQuery($query);
     }
 
     public static function add(Termin $termin, Broker $broker)
     {
-        $query = "INSERT INTO termin(usluga, klijent, prostorija, datum) VALUES('$termin->usluga','$termin->klijent', ,'$termin->prostorija', '$termin->datum')";
+        $query = "INSERT INTO termin(usluga, klijent, datum, prostorija) VALUES('$termin->usluga','$termin->klijent', '$termin->datum', '$termin->prostorija')";
         return $broker->executeQuery($query);
     }
 }
