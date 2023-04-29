@@ -209,10 +209,10 @@
             alert("Morate uneti naziv usluge!");
             return false;
         }
-        const regex = '/^([^0-9]*)$/';
-        if(naziv===1) {
+        const regex = new RegExp('/^([^0-9]*)$/');
+        if(!regex.test(naziv)) {
           alert("Naizv usluge ne sme sadrzati cifre!");
-            return false;
+          return false;
         }
         else {
             const pruzalac = $('#pruzalac_dodaj').val();
